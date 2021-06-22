@@ -37,8 +37,8 @@ def Calculate_cgpa( ):
 			sum2=0
 			while j<labs:
 				lab = input("Please enter your grades in your lab: ").upper()
-				while len(lab) == 0:
-					lab = input("enter your valid Subject grades A,B,C,D,E,F : ").upper()
+				while lab not in grades:
+					var1= input("enter your valid Subject grades O,S,A,B,C,D,E,F : ").upper()
 				if(lab=='O'):
 					lab=10
 				elif(lab=='S'):
